@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.sampleschoolteacher.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_courses"
+        android:name="com.example.sampleschoolteacher.ui.courses.CoursesFragment"
+        android:label="@string/menu_courses"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.sampleschoolteacher.ui.profile.ProfileFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_assignment"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.assignment_upload.AssignmentFragment"
+        android:label="@string/menu_assignment"
+        tools:layout="@layout/assignment_fragment"/>
+
+
+    <fragment
+        android:id="@+id/nav_class_data"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.ClassDataFragment"
+        android:label="@string/menu_view_class"
+        tools:layout="@layout/fragment_class_data">
+        <argument
+            android:name="subjectName"
+            app:argType="string"
+            android:defaultValue="empty"/>
+        <argument
+            android:name="className"
+            app:argType="string"
+            android:defaultValue="empty"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_students"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.class_students.ClassStudentsFragment"
+        android:label="@string/menu_view_students"
+        tools:layout="@layout/fragment_class_students" />
+
+    <fragment
+        android:id="@+id/nav_weekday"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.class_timetable.WeekdayFragment"
+        android:label="@string/menu_view_timetable"
+        tools:layout="@layout/fragment_weekday" />
+
+    <fragment
+        android:id="@+id/nav_timetable"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.class_timetable.TimetableFragment"
+        android:label="@string/menu_view_timetable"
+        tools:layout="@layout/fragment_timetable" />
+
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.quiz.QuizFragment"
+        android:label="@string/menu_view_quiz"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/nav_add_quiz"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.quiz.AddQuizFragment"
+        android:label="@string/menu_view_quiz"
+        tools:layout="@layout/fragment_add_quiz" />
+
+    <fragment
+        android:id="@+id/nav_examinations"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.examination.ExaminationFragment"
+        android:label="@string/menu_view_exams"
+        tools:layout="@layout/fragment_examination" />
+
+    <fragment
+        android:id="@+id/nav_my_weekday"
+        android:name="com.example.sampleschoolteacher.ui.timetable.WeekdayFragment"
+        android:label="@string/menu_view_timetable"
+        tools:layout="@layout/fragment_weekday2" />
+
+    <fragment
+        android:id="@+id/nav_my_timetable"
+        android:name="com.example.sampleschoolteacher.ui.timetable.MyTimetableFragment"
+        android:label="@string/menu_view_timetable"
+        tools:layout="@layout/fragment_my_timetable" />
+
+    <fragment
+        android:id="@+id/nav_online_class"
+        android:name="com.example.sampleschoolteacher.ui.timetable.OnlineClassFragment"
+        android:label="@string/menu_online_class"
+        tools:layout="@layout/fragment_online_class" />
+
+    <fragment
+        android:id="@+id/nav_announcement"
+        android:name="com.example.sampleschoolteacher.ui.announcements.AnnouncementsFragment"
+        android:label="@string/menu_announcement"
+        tools:layout="@layout/fragment_announcements" />
+
+    <fragment
+        android:id="@+id/nav_announcement_detail"
+        android:name="com.example.sampleschoolteacher.ui.announcements.AnnouncementDetailFragment"
+        android:label="@string/menu_announcement"
+        tools:layout="@layout/fragment_announcement_detail" />
+
+    <fragment
+        android:id="@+id/nav_my_profile"
+        android:name="com.example.sampleschoolteacher.ui.profile.ProfileFragment"
+        android:label="@string/menu_view_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_student_data"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.class_students.student_data.StudentDataFragment"
+        android:label="@string/menu_view_students_data"
+        tools:layout="@layout/fragment_student_data" />
+
+    <fragment
+        android:id="@+id/nav_student_attendance"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.class_students.student_data.student_attendance.StudentAttendanceFragment"
+        android:label="@string/menu_view_attendance"
+        tools:layout="@layout/fragment_student_attendance" />
+
+    <fragment
+        android:id="@+id/nav_student_attendance_data"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.class_students.student_data.student_attendance.StudentAttendanceDataFragment"
+        android:label="@string/menu_view_attendance"
+        tools:layout="@layout/fragment_student_attendance_data" />
+
+    <fragment
+        android:id="@+id/nav_add_results"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.examination.add_result.AddResultFragment"
+        android:label="@string/menu_add_results"
+        tools:layout="@layout/fragment_add_result" />
+
+    <fragment
+        android:id="@+id/nav_view_results"
+        android:name="com.example.sampleschoolteacher.ui.courses.class_data.class_students.student_data.student_result.StudentResultFragment"
+        android:label="@string/menu_view_results"
+        tools:layout="@layout/fragment_student_result" />
+
+</navigation>
