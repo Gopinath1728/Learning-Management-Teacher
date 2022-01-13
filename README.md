@@ -3,9 +3,7 @@ Learning Management System is a project which is focused on bringing online solu
 ## Project Description
 I have developed this project to help students stay up to date with their learning. Due to COVID-19, many students have lost track of their learning as most of the educational institutions were not equipped for online, as COVID-19 came out of the blue. The Application is built in such a way that the learning mode can switched between offline and online by just pressing a toggle button. I have also included Attendance feature which gets updated automatically in online mode by calculating the amount of time a student has spent in the class. Whereas in offline mode, the assigned teacher will have the access to update the attendace in a stipulated time. 
 ## Teacher Application
-This application is designed for the students. The students get authenticated when their data is uploaded to database. The login details can be obtained from the Admin.
-The student can check his daily timetable displayed right at the top of the homescreen in the application. When the teaching mode is Online, the time slot turns blue, 
-and when clicked, the student joins the online class. A student can check all his attendance details, number of days present and absent for each subject respectively. A student can check his courses and the couse materials which will be available in Google Drive. The application takes the user to google drive using WebView. Students can view the messages sent to them. They can check available quiz and attend them. If already attended they can view their scores. They can also check the announcements, their academic performance and available examinations.
+This application is designed for the teachers. Teachers will be assigned their teaching class and subject by the Admin. Their timetable be be populated accordingly. Just like student application, time slots in today's timetable turn blue when its lecture time in online mode. A teacher can be set as a Proctor by the Admin. With Proctor privilege, a teacher can set a student as a Class monitor. A teacher can upload assignments and quiz. Teacher also have the ability to send message to the students.  
 ## Tech
 1. This project is built on MVVM Architecture.
 2. Firebase Authentication is used to ease the user authentication.
@@ -23,8 +21,7 @@ and when clicked, the student joins the online class. A student can check all hi
 
 ## Sample
 
-
-
+https://user-images.githubusercontent.com/49778072/149363722-a89f9fb9-a0a7-475c-83d2-e20b06eaac3e.mp4
 
 ## External Libraries used:
 1. Firebase
