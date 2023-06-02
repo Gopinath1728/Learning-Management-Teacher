@@ -19,9 +19,7 @@ This application is designed for the teachers. Teachers will be assigned their t
 6. Send Message to Students and Teachers.
 7. Online Class in Jitsi Meet (Yet to include)
 
-## Sample
 
-https://user-images.githubusercontent.com/49778072/149363722-a89f9fb9-a0a7-475c-83d2-e20b06eaac3e.mp4
 
 ## External Libraries used:
 1. Firebase
